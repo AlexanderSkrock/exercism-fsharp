@@ -1,0 +1,17 @@
+!bin/fetch-configlet
+!bin/fetch-configlet.ps1
+bin/
+build/
+obj/
+packages/
+tools/
+.fake/
+.paket/paket.exe
+paket-files
+.idea/
+.vs/
+.vscode/
+.ionide/
+.dotnet
+*.fsproj.user
+BenchmarkDotNet.Artifacts/
