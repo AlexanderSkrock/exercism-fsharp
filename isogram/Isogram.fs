@@ -1,3 +1,5 @@
 ﻿module Isogram
 
-let isIsogram str = failwith "You need to implement this function."
+let isIsogram (str: string) = 
+    let withoutSpecialCharacters = Seq.map System.Char.ToUpper >> Seq.filter System.Char.IsLetter
+    str |> withoutSpecialCharacters |> Seq.length = (str |> withoutSpecialCharacters |> Set.ofSeq |> Set.count)
